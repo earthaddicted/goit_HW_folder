@@ -4,46 +4,47 @@
  Результат выполнения функции вывести в консоль. Работать с целыми числами,
  большими, меньшими, и равными нулю. Бесконечности можно не обрабатывать*/
 
-// var userNumber = prompt('Укажите число');
-// var power = prompt('Укажите степень');
-// pow(userNumber, power);
-//
-// function pow(a, b) {
-//     var number = a;
-//     var result;
-//
-//     if (a === 0) {
-//         result = 0;
-//         return alert(result);
-//     }
-//
-//     if (b > 0) {
-//         for (var i = 1; i <= b; i++) {
-//             number *= a;
-//             result = number;
-//         }
-//     } else if (b < 0) {
-//         var positivePow =  -b;
-//         for (var j = 1; j <= positivePow; j++) {
-//             number *= a;
-//             result = 1 / number;
-//         }
-//     } else if (b === 0) {
-//         result = 1;
-//     }
-//     // else if (a === 0) {
-//     //     result = 0;
-//     // } else {
-//     //     result = 'you entered not a number';
-//     // }
-//     return alert(result);
-// }
+ (function() {
+ 	'use strict';
 
+ 	var x = prompt('Enter a number', '');
+ 	var n = prompt('Enter power', '');
 
-(function () {
-	
-})()
+ 	function pow(x, n) {
+ 		var number = x;
+ 		var	result = 1;
 
+ 		if (x === 0) {
+ 			result = 0;
+ 		} else if (n == 0) {
+ 			result = 1;
+ 		} else if (n > 0) {
+ 			for (var i = 1; i < n; i++) {
+ 				number *= x;
+ 				result = number;
+ 			}
+ 		} else if (n < 0) {
+ 			var positivePow = -n;
+
+ 			for (var i = 0; i < positivePow; i++) {
+ 				number *= x;
+ 				result = 1 / number;
+ 			}
+
+ 		} else if (isNaN(x)) {
+ 			alert('Упс! Здається це не число');
+ 			result = 'Упс! Здається це не число';
+ 		} else if (isNaN(n)) {
+ 			alert('Упс! Здається це не число');
+ 			result = 'Упс! Здається це не число';
+ 		}
+ 		return result;
+
+ 	} //end of function
+
+ 	console.log(pow(x, n));
+
+})();
 
 
 // TASK2
@@ -64,12 +65,12 @@
 
 	userName[i] = name;
 
-	name = prompt("Будь ласка, напишіть ім'я");
+	name = prompt('Будь ласка, напишіть ім\'я:', '');
 	}
 
 	console.log(userName);
 
-	var userLogin = prompt("Будь ласка, напишіть ім'я користувача");
+	var userLogin = prompt('Будь ласка, напишіть ім\'я користувача:', '');
 
 	for (var i = 0; i < userName.length; i++) {
 		if ( userLogin === userName[i] ) {
@@ -79,10 +80,10 @@
 	}
 
 	if ( trueUser) {
-		alert( userLogin + ' , ви успішно авторизувалися');
+		alert( userLogin + ' , Ви успішно авторизувалися');
 
 	} else {
-		alert("oops! Спробуйте інше ім'я");
+		alert('oops! Спробуйте інше ім\'я');
 	}
 
 })();
