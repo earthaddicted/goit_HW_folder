@@ -46,7 +46,6 @@
 
  	console.log(pow(x, n));
  	alert('Відповідь: ' + pow(x, n));
-
 })();
 
 
