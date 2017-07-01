@@ -18,7 +18,6 @@ h2,
 	font-weight: 600;
 }
 
-
 .header {
 	display: inline-block;
 	max-height: 121px;
@@ -69,7 +68,6 @@ a {
 .content_flex {
 	display: inline-block;
 }
-
 
 .content_flex figure {
 	display: block;
@@ -129,8 +127,6 @@ a {
 	.contacts {
 		padding-right: 11%;
 	}
-
-
 }
 
 @media screen and (max-width: 550px) {
@@ -149,7 +145,5 @@ a {
 	.logo__main {
 		width: 85%;
 	}
-
-
 }
 /* media  */
