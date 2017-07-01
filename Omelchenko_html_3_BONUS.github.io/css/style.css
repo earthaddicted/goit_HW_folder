@@ -1,0 +1,156 @@
+
+body {
+	background: url("../img/bg/background.jpg") #050505 no-repeat 50% 50%;
+	color: #e6e6e6;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+.wrapper {
+		max-width: 824px;
+		margin: 0 auto;
+		padding: 0 72px;
+}
+
+h2,
+.logo__title {
+		font-size: 10px;
+		font-family: Tahoma, Geneva, sans-serif;
+		font-weight: 600;
+}
+
+
+.header {
+		display: inline-block;
+		max-height: 121px;
+		width: 100%;
+		padding-top: 57px;
+    	padding-left: 9px;
+}
+
+.logo {
+		position: relative;
+		width: 260px;
+		float: left;
+}
+
+.logo__main {
+		position: absolute;
+		top: 51%;
+}
+.logo__title {
+		position: absolute;
+		top: 81%;
+		left: 31%;
+}
+
+
+.logo__bg {
+		float: right;
+}
+
+.contacts {
+		float: right;
+		max-width: 88px;
+		padding-top: 11%;
+		padding-right: 4%;
+}
+
+.contacts a {
+		font-size: 8px;
+}
+
+a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+/*header*/
+/* content */
+
+.content_flex {
+		display: inline-block;
+}
+
+
+.content_flex figure {
+		display: block;
+		position: relative;
+		float: left;
+		padding: 3% 0.6% 3.5%;
+		text-align: center;
+		font-size: 15px;
+		margin: 0 auto;
+		width: 32%;
+}
+
+.content_flex img {
+	width: 97%;
+		border: 3px solid #9c9c9c;
+		-webkit-box-shadow: inset 0px -3px 9px 6px rgba(0,0,0,0.75);
+		-moz-box-shadow: inset 0px -3px 9px 6px rgba(0,0,0,0.75);
+		box-shadow: inset 0px -3px 9px 6px rgba(0,0,0,0.75);
+		-webkit-border-radius: 1%;
+		border-radius: 1%;
+		transition: .8s opacity;   
+}
+
+/* content */
+/* footer */
+.footer {
+		text-align: center;
+		margin-top: 19%;
+		padding-bottom: 5%;
+		font-family: Tahoma, Geneva, sans-serif;
+}
+
+/* footer */
+
+/* hover effects */
+.content_flex:hover img {
+		opacity: 0.3; 
+ }
+
+.content_flex:hover img:hover {
+		opacity: 1; 
+} 
+
+/* hover effects */
+/* media */
+@media screen and (max-width: 720px) {
+	.content_flex > figure {
+		width: 45%;
+		padding: 1% 1.4%;
+	}
+
+	header {
+		padding-bottom: 14px;
+	}
+	
+	.contacts {
+		padding-right: 11%;
+	}
+
+
+}
+
+@media screen and (max-width: 550px) {
+	.content_flex > figure {
+		width: 90%;
+	}
+
+	.contacts {
+		position: absolute;
+		top: 3%;
+		right:34%;
+	}
+
+}
+
+@media screen and (max-width: 450px) {
+	.logo__main {
+		width: 85%;
+	}
+
+
+}
+/* media  */
