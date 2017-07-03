@@ -2,6 +2,8 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>HW3</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -13,14 +15,32 @@
 			<div class="logo">
 				<img src="img/logo.png" alt="logo">
 			</div>
+			<input type="checkbox" id="menuTrigger">
 			<nav class="nav__menu nav__menu_header">
+				<label for="menuTrigger" class="trigger">
+				    <div class="line"></div>
+				    <div class="line"></div>
+				    <div class="line"></div>
+		  		</label>
 				<ul>
 					<li><a href="#">Главная</a></li>
-					<li><a href="#">Товары</a></li>
-					<li><a href="#">О нас</a></li>
+					<li><a href="#" class="goods">Товары</a>
+						<ul class="mob-dropdown">
+							<li><a href="#">Ноутбуки</a></li>
+							<li><a href="#">Планшеты</a></li>
+							<li><a href="#">Телефоны</a></li>
+							<li><a href="#">Телевизоры</a></li>
+							<li><a href="#">Бытовая техника</a></li>
+							<li><a href="#">Автотовары</a></li>
+						</ul>
+					</li>
+					<li><a href="#">О&nbsp;нас</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
 			</nav>
+			 <!-- hamburger menu-->
+          	
+			<!-- hamburger menu-->
 		</header>
 		<div class="container clearfix">
 			<div class="sidebar">
@@ -34,7 +54,10 @@
 				</ul>
 			</div>
 			<div class="general_info">
-				<img src="img/image.jpg" alt="bike">
+				<div class="general_info--img">
+					<img src="img/image.jpg" alt="bike">
+				</div>
+				<!-- <img src="img/image.jpg" alt="bike"> -->
 				<p>
 					Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною. Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню зразків шрифтів Letraset, які містили уривки з Lorem Ipsum, і вдруге - нещодавно завдяки програмам комп'ютерного верстування на кшталт Aldus Pagemaker, які використовували різні версії Lorem Ipsum.
 				</p>
@@ -45,7 +68,7 @@
 				<ul>
 					<li><a href="#">Главная</a></li>
 					<li><a href="#">Товары</a></li>
-					<li><a href="#">О нас</a></li>
+					<li><a href="#">О&nbsp;нас</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
 				<div class="rights">2014 © All rights reserved</div>
