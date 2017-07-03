@@ -40,7 +40,8 @@ h1 {
 }
 
 img {
-    margin: 16px 146px 5px;
+    display: block;
+    margin: 18px auto 5px;
     border: 1px solid #8f8f8f;
     width: auto;
     max-height: 202px;
@@ -82,7 +83,7 @@ p,
 }
 
 .ref {
-    padding: 8px 0 18px;
+    padding: 12px 0 15px;
 }
 
 .ref a {
