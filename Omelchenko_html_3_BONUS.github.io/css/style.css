@@ -90,8 +90,8 @@ a {
 	border-radius: 1%;
 	transition: .8s opacity;   
 }
-
 /* content */
+
 /* footer */
 .footer {
 	text-align: center;
@@ -110,9 +110,9 @@ a {
 
 .content_flex:hover img:hover {
 	opacity: 1;
-} 
-
+}
 /* hover effects */
+
 /* media */
 @media screen and (max-width: 720px) {
 	.content_flex > figure {
