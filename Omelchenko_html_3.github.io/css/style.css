@@ -212,7 +212,7 @@ p,
 
     .nav__menu_header {
         position: fixed;
-        top: 60px;
+        top: 50px;
         height: 100%;
     }
 
@@ -358,7 +358,7 @@ p,
     #menuTrigger:checked + .nav__menu > ul {
         height: 100vh;
         overflow: scroll;
-        max-height: 233px;
+        max-height: 245px;
     }
 
     .nav__menu_header a {
