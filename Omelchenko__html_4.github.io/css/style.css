@@ -8,8 +8,8 @@
 
 .product-item {
 	float: left;
-	width: 291px;
-    height: 506px;
+	max-width: 291px;
+    /* height: 506px; */
     padding: 10px 42px;
 	border: 2px solid #5a5a5a;
 	overflow: hidden;
@@ -61,6 +61,7 @@
 	line-height: 26px;
 	background: #ff0000;
 	padding: 7px 60px 12px 76px;
+	margin-bottom: 3px;
 	transition: .2s ease-out;
 	cursor: pointer;
 }
