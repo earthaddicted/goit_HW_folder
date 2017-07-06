@@ -1,0 +1,48 @@
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	width: 600px;
+    height: 600px;
+    min-width: 300px;
+    min-height: 300px;
+    margin: 50px auto;
+}
+
+.chess-item {
+	width: 33.33%;
+	height: 33.33%;
+}
+
+.chess-item:nth-child(even) {
+	background-color: #FFF;
+}
+
+.chess-item:nth-child(odd) {
+	background-color: #7a150f;
+}
+
+ .chess-item:nth-child(2) {
+	background-image: url('../img/black_bishop-512.png');
+	background-repeat: no-repeat;
+	-webkit-background-size: contain;
+	     -o-background-size: contain;
+	        background-size: contain;
+}
+
+.chess-item:nth-child(4) {
+	background-image: url('../img/white_knight-512.png');
+	background-repeat: no-repeat;
+	-webkit-background-size: contain;
+	     -o-background-size: contain;
+	        background-size: contain;
+}
+
+.chess-item:nth-child(8) {
+	background-image: url('../img/white_rook-512.png');
+	background-repeat: no-repeat;
+	-webkit-background-size: contain;
+	     -o-background-size: contain;
+	        background-size: contain;
+}
+
+

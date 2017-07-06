@@ -1,3 +1,111 @@
+.next-task a {
+	display: flex;
+	-webkit-align-items: center;
+	        align-items: center;
+	position: fixed;
+	top: 20px;
+	right: 10px;
+	padding: 20px;
+	color: #fff;
+	background: green;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Lato', sans-serif;
+	-webkit-animation: 10s changebackground none infinite;
+	   -moz-animation: 10s changebackground none infinite;
+	     -o-animation: 10s changebackground none infinite;
+	        animation: 10s changebackground none infinite;
+}
+
+.next-task a::after {
+	content: "";
+	position: absolute; 
+	width: 0; 
+	height: 0; 
+	right: -9px;
+    top: 62px;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 10px solid green;
+	animation: 10s changebackgroundtriangle none infinite;
+}
+
+@keyframes changebackground {
+	0%, 100% {
+		background: rgb(32, 141, 160);
+	}
+
+	25% {
+		background: rgb(52, 138, 153);
+	}
+
+	50% {
+		background: rgb(8, 178, 121);
+	}
+
+	60% {
+		background: rgb(197, 226, 217);
+	}
+
+	70% {
+		background: rgb(239, 230, 238);
+	}
+
+
+	80% {
+		background: rgb(211, 179, 208);
+	}
+
+	90% {
+		background: rgb(118, 93, 163);
+	}
+
+	95% {
+		background: rgb(209, 156, 204);
+	}
+}
+
+@keyframes changebackgroundtriangle {
+	0%, 100% {
+		border-left: 10px solid rgb(32, 141, 160);
+	}
+
+	25% {
+		border-left: 10px solid rgb(52, 138, 153);
+	}
+
+	50% {
+		border-left: 10px solid rgb(8, 178, 121);
+	}
+
+	60% {
+		border-left: 10px solid rgb(197, 226, 217);
+	}
+
+	70% {
+		border-left: 10px solid rgb(239, 230, 238);
+	}
+
+	80% {
+		border-left: 10px solid rgb(211, 179, 208);
+	}
+
+	90% {
+		border-left: 10px solid rgb(118, 93, 163);
+	}
+
+	95% {
+		border-left: 10px solid rgb(209, 156, 204);
+	}
+}
+
+
+
+
 .product {
 	display: flex;
     flex-wrap: wrap;
