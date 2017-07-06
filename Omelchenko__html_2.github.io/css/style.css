@@ -104,7 +104,8 @@ main {
 
 /* white section */
 .block-example__white {
-	max-width: 80%;
+	max-width: 60%;
+	border:  dashed thick;
 }
 
 .block-example__white sub {
