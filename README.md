@@ -30,9 +30,10 @@ HW3 BONUS https://earthaddicted.github.io/goit_HW_folder/Omelchenko_html_3_BONUS
 
 HW4 https://earthaddicted.github.io/goit_HW_folder/Omelchenko_html_4.github.io/
 
+HW5 https://earthaddicted.github.io/goit_HW_folder/Omelchenko_html_5.github.io/
 
+HW5 table https://earthaddicted.github.io/goit_HW_folder/Omelchenko_html_5_table.github.io/
 
+HW5 table-grid https://earthaddicted.github.io/goit_HW_folder/Omelchenko_html_5_table_grid.github.io/
 
-
-
-
+HW6 page view https://earthaddicted.github.io/goit_HW_folder/Omelchenko_html_6.github.io/
