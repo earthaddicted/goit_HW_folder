@@ -1,4 +1,5 @@
 quick view of my HW:
+
 NEW HW:
 
 HW1 page view https://earthaddicted.github.io/goit_HW_folder/Omelchenko__html_1.github.io/
@@ -15,5 +16,15 @@ HW6 TASK1 page view https://earthaddicted.github.io/goit_HW_folder/Omelchenko__h
 
 
 OLD HW: 
+
+
+HW 1 https://earthaddicted.github.io/goit_HW_folder/Omelchenko_html_1.github.io/
+HW 1 my https://earthaddicted.github.io/goit_HW_folder/Omelchenko_html_1_animated.github.io/
+HW3 https://earthaddicted.github.io/goit_HW_folder/Omelchenko_html_3.github.io/
+HW3 BONUS https://earthaddicted.github.io/goit_HW_folder/Omelchenko_html_3_BONUS.github.io/
+
+
+
+
 
 
