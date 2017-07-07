@@ -1,0 +1,387 @@
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    background: url('../img/bg/bg2.jpg') repeat-x;
+    background-color: #0c739f;
+    font-family: "tahoma", "verdana", "segoe", sans-serif;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    margin-top: 37px;
+}
+
+.column_section a,
+.column_section h2 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper,
+.main_content nav {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .75);
+}
+
+header,
+.header_info,
+.countries,
+.front_pic img,
+.nav_menu,
+.column_section {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer,
+.countries a {
+    text-align: center;
+}
+
+header,
+.header_info,
+.countries,
+.front_pic img,
+.nav_menu {
+-webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.header_info {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+footer,
+.nav_menu a {
+    color: #fff;
+}
+
+h2,
+.header_logo p,
+footer {
+    font-size: 12px;
+}
+
+header a,
+.countries a {
+    font-size: 10px;
+}
+
+header, 
+header a,
+.front_pic img {
+    color: #128aa7;
+}
+
+.sub_nav,
+section nav,
+.header_logo {
+    position: relative;
+}
+
+li.sub_nav::after,
+.header_logo p,
+.submenu {
+    position: absolute;
+}
+
+/* general */
+
+header {
+    margin: 0 28.6px;
+    padding-top: 12px;
+}
+
+.header_logo {
+    max-width: 300px;
+}
+
+.header_logo img {
+    max-width: 283px;
+}
+
+.header_logo p {
+    top: 97px;
+    left: 72px;
+}
+
+.contacts {
+    width: 125px;
+    align-self: flex-end;
+}
+
+.countries li {
+    margin: 24px 1px 11px 1px;
+}
+
+.countries a {
+    display: block; 
+    width: 53px;
+    padding-top: 44px;
+    text-decoration: underline;
+    background: url('../img/countries_sprite.png') no-repeat;
+}
+
+.countries a:hover {
+    text-decoration: none;
+}
+
+.india a {
+    background-position: 4px 0;
+}
+
+.nepal a {
+    background-position: -56px 0;
+}
+
+.tibet a {
+    background-position: -109px 0;
+}
+
+.bhutan a {
+    background-position: -165px 0;
+}
+
+.sri-lanka a {
+    background-position: -221px 0;
+}
+
+.maldives a {
+    background-position: -278px 0;
+}
+/*contacts*/
+
+/*main_content*/
+.front_pic img {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    max-width: 1176px;
+}
+
+/*menu*/
+.nav_menu, 
+.submenu {
+    background-color: #303030;
+}
+
+.nav_menu {
+    justify-content: center;  
+}
+
+.nav_menu a {
+    display: inline-block;
+    padding: 4px 34px 7px;
+    font-size: 14px;
+    transition: .4s ease-out;
+}
+
+li.sub_nav::after {
+    top: 6px;
+    right: 18px;
+    width: 0;
+    height: 0;
+    margin: 2%;
+    transition: border-top .4s ease-out, transform .8s;
+    border-top: 6px solid #fff;
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
+    content: '';
+}
+
+.sub_nav:hover::after {
+    transform: rotate(180deg);
+    border-top: 6px solid rgb(12, 115, 159);
+}
+
+.submenu {
+    width: 150px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .75);
+    top: 25px;
+    left: 24px;
+}
+
+.submenu li {
+    display: none;
+}
+
+.submenu a {
+    padding: 5px 9px;
+}
+
+.nav_menu a:hover,
+.submenu a:hover {
+    color: rgb(12, 115, 159);
+    transition: .4s ease-out;
+}
+
+.sub_nav:hover > .submenu li {
+    display: block;
+}
+/*menu end*/
+
+/*main_content*/
+/* columns */
+.left_column,
+.right_column {
+    background: #edeef0;
+    border: 1px solid #c7cacf;
+    padding: 11px 16px;
+    width: 21%;
+    min-width: 204px;
+}
+
+.center_column {
+    width: 52%;
+    min-height: 50px;
+    padding: 20px 30px;
+}
+
+.column_section a,
+.column_section h2 {
+    color: #424c43;
+}
+
+.column_section a {
+    font-size: 14px;
+    line-height: 24px;
+    border-bottom: 1px solid transparent;
+    transition: .4s ease-out;
+    
+}
+
+.column_section a:hover {
+    color: rgb(12, 115, 159);
+    border-bottom: 1px solid rgba(12, 115, 159, .6);
+}
+
+.column_section h2 {
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+/* columns */
+.footer {
+    opacity: .8;
+    margin: 7px 0;
+}
+
+@media (max-width: 940px) {
+  .nav_menu {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: center;
+        align-items: center;
+        font-size: 17px;
+    }  
+ 
+    li.sub_nav::after {
+        top: 8px;
+        right: 11px;
+    }
+
+    .submenu {
+        top: 3px;
+        left: 154px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    header,
+    .header_info
+     {
+        -webkit-justify-content: center;
+                justify-content: center;
+        padding-bottom: 10px;
+    }
+
+    .column_section,
+    .header_info {
+        -webkit-flex-flow: row wrap;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+    }
+
+    .column_section {
+        justify-content: center;
+    }
+
+    .column_section > div {
+        text-align: center;
+    }
+
+    .left_column, 
+    .right_column {
+        order: 2;
+        width: 50%;
+    }
+
+    .center_column {
+        width: 100%;
+        order: 1;
+    }
+}
+
+@media (max-width: 600px) {
+
+    body {
+        background: none;
+    }
+
+    .wrapper {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .column_section > div {
+        width: 100%;
+    }
+
+    .left_column, 
+    .right_column {
+        width: 100%;
+    }
+    
+    .left_column {
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        color: #000;
+    }
+}
+
+ @media (max-width: 450px)  {
+    .contacts {
+        text-align: center;
+    }
+
+    .submenu {    
+        top: 24px;
+        left: 25px;
+        z-index: 5;
+    }
+
+    .countries {
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+}
