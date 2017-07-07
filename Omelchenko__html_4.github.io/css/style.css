@@ -1,177 +1,196 @@
+ * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 .next-task a {
-	display: flex;
-	-webkit-align-items: center;
-	        align-items: center;
-	position: fixed;
-	top: 20px;
-	right: 10px;
-	padding: 20px;
-	color: #fff;
-	background: green;
-	-webkit-border-radius: 50%;
-	        border-radius: 50%;
-	width: 100px;
-	height: 100px;
-	text-align: center;
-	text-decoration: none;
-	font-family: 'Lato', sans-serif;
-	-webkit-animation: 10s changebackground none infinite;
-	   -moz-animation: 10s changebackground none infinite;
-	     -o-animation: 10s changebackground none infinite;
-	        animation: 10s changebackground none infinite;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    color: #fff;
+    background: #008000;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    -webkit-animation: 10s changebackground none infinite;
+    -moz-animation: 10s changebackground none infinite;
+    -o-animation: 10s changebackground none infinite;
+    animation: 10s changebackground none infinite;
 }
 
 .next-task a::after {
-	content: "";
-	position: absolute; 
-	width: 0; 
-	height: 0; 
-	right: -9px;
-    top: 62px;
-	border-top: 10px solid transparent;
-	border-bottom: 10px solid transparent;
-	border-left: 10px solid green;
-	animation: 10s changebackgroundtriangle none infinite;
+    position: absolute;
+    top: 40px;
+    right: -9px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #008000;
+    content: '';
+    animation: 10s changebackgroundtriangle none infinite;
 }
 
 @keyframes changebackground {
-	0%, 100% {
-		background: rgb(32, 141, 160);
-	}
+    0%, 100% {
+        background: rgb(32, 141, 160);
+    }
 
-	25% {
-		background: rgb(52, 138, 153);
-	}
+    25% {
+        background: rgb(52, 138, 153);
+    }
 
-	50% {
-		background: rgb(8, 178, 121);
-	}
+    50% {
+        background: rgb(8, 178, 121);
+    }
 
-	60% {
-		background: rgb(197, 226, 217);
-	}
+    60% {
+        background: rgb(197, 226, 217);
+    }
 
-	70% {
-		background: rgb(239, 230, 238);
-	}
+    70% {
+        background: rgb(239, 230, 238);
+    }
 
 
-	80% {
-		background: rgb(211, 179, 208);
-	}
+    80% {
+        background: rgb(211, 179, 208);
+    }
 
-	90% {
-		background: rgb(118, 93, 163);
-	}
+    90% {
+        background: rgb(118, 93, 163);
+    }
 
-	95% {
-		background: rgb(209, 156, 204);
-	}
+    95% {
+        background: rgb(209, 156, 204);
+    }
 }
 
 @keyframes changebackgroundtriangle {
-	0%, 100% {
-		border-left: 10px solid rgb(32, 141, 160);
-	}
+    0%, 100% {
+        border-left: 10px solid rgb(32, 141, 160);
+    }
 
-	25% {
-		border-left: 10px solid rgb(52, 138, 153);
-	}
+    25% {
+        border-left: 10px solid rgb(52, 138, 153);
+    }
 
-	50% {
-		border-left: 10px solid rgb(8, 178, 121);
-	}
+    50% {
+        border-left: 10px solid rgb(8, 178, 121);
+    }
 
-	60% {
-		border-left: 10px solid rgb(197, 226, 217);
-	}
+    60% {
+        border-left: 10px solid rgb(197, 226, 217);
+    }
 
-	70% {
-		border-left: 10px solid rgb(239, 230, 238);
-	}
+    70% {
+        border-left: 10px solid rgb(239, 230, 238);
+    }
 
-	80% {
-		border-left: 10px solid rgb(211, 179, 208);
-	}
+    80% {
+        border-left: 10px solid rgb(211, 179, 208);
+    }
 
-	90% {
-		border-left: 10px solid rgb(118, 93, 163);
-	}
+    90% {
+        border-left: 10px solid rgb(118, 93, 163);
+    }
 
-	95% {
-		border-left: 10px solid rgb(209, 156, 204);
-	}
+    95% {
+        border-left: 10px solid rgb(209, 156, 204);
+    }
 }
 
 .product {
-	display: flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-	padding: 50px 20px;
-	
+    padding: 50px 20px;
 }
 
 .product-item {
-	float: left;
-	max-width: 291px;
+    max-width: 380px;
+    margin: 20px;
     /* height: 506px; */
-    padding: 10px 42px;
-	border: 2px solid #5a5a5a;
-	overflow: hidden;
-	margin: 20px;
+    /* padding: 10px 42px; */
+    padding: 10px 3.3%;
+    float: left;
+    border: 2px solid #5a5a5a;
+    overflow: hidden;
 }
 
 .product-item h3 {
-	font-family: Tahoma;
-	font-size: 22px;
-	line-height: 26px;
-	text-align: center;
-	color: #242424;
+    color: #242424;
+    font-family: Tahoma;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
 }
 
 .product-pic img {
-	padding: 20px 20px 0;
+    padding: 20px 20px 0;
 }
 
 .product-installment {
-	display: inline-block;
-	color: #FFF;
-	box-shadow: -3px 3px 0 #9c9c9c;
-	background-color: #8bc144;
-	padding: 3px 43px;
-	font-family: Tahoma;
-	font-size: 22px;
-	line-height: 26px;
-	margin-bottom: 20px;
-	margin-left: -42px;
+    display: inline-block;
+    margin: 0 0 17px -42px;
+    padding: 3px 43px;
+    background-color: #8bc144;
+    color: #fff;
+    font-family: Tahoma;
+    font-size: 22px;
+    line-height: 26px;
+    box-shadow: -3px 3px 0 #9c9c9c;
 }
 
 .product-price {
-	font-family: Tahoma;
-	font-size: 31px;
-	line-height: 26px;
-	margin-bottom: 15px;
-	text-align: center;
-	font-weight: 500;
+    margin-bottom: 15px;
+    font-family: Tahoma;
+    font-size: 31px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
 }
 
 .product-buy {
-	display: inline-block;
-	text-shadow: -1px 1px 0 #791c16;
-	box-shadow: -3px 3px 0 #791c16;
-	color: #ffffff;
-	font-family: Tahoma;
-	font-size: 28px;
-	font-weight: bold;
-	line-height: 26px;
-	background: #ff0000;
-	padding: 7px 60px 12px 76px;
-	margin-bottom: 3px;
-	transition: .2s ease-out;
-	cursor: pointer;
+    display: inline-block;
+    margin: 6px 21px 0;
+    padding: 7px 60px 12px 73px;
+    transition: .2s ease-out;
+    background: #f00;
+    color: #fff;
+    font-family: Tahoma;
+    font-size: 28px;
+    letter-spacing: .8px;
+    line-height: 26px;
+    text-shadow: -1px 1px 0 #791c16;
+    box-shadow: -3px 3px 0 #791c16;
+    cursor: pointer;
 }
 
 .product-buy:hover {
-	background: rgba(255, 0, 0, .6);
-	box-shadow: 1px 1px 0 #791c16;
+    background: rgba(255, 0, 0, .6);
+    box-shadow: 1px 1px 0 #791c16;
+}
+
+@media (max-width: 668px) {
+    .product-item {
+        width: 100%;
+        margin: 10px auto;
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-pic img {
+        padding: 20px 10px 0;
+    }
 }

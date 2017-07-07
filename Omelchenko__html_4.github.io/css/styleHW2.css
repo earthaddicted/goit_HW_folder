@@ -1,48 +1,55 @@
+ * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 .wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	width: 600px;
-    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
     min-width: 300px;
+    height: 600px;
     min-height: 300px;
     margin: 50px auto;
 }
 
 .chess-item {
-	width: 33.33%;
-	height: 33.33%;
+    width: 33.3333%;
+    height: 33.3333%;
+    background-position: 50%;
 }
 
 .chess-item:nth-child(even) {
-	background-color: #FFF;
+    background-color: #fff;
 }
 
 .chess-item:nth-child(odd) {
-	background-color: #7a150f;
+    background-color: #7a150f;
 }
 
  .chess-item:nth-child(2) {
-	background-image: url('../img/black_bishop-512.png');
-	background-repeat: no-repeat;
-	-webkit-background-size: contain;
-	     -o-background-size: contain;
-	        background-size: contain;
+    background-image: url('../img/black_bishop-512.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
 }
 
 .chess-item:nth-child(4) {
-	background-image: url('../img/white_knight-512.png');
-	background-repeat: no-repeat;
-	-webkit-background-size: contain;
-	     -o-background-size: contain;
-	        background-size: contain;
+    background-image: url('../img/white_knight-512.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
 }
 
 .chess-item:nth-child(8) {
-	background-image: url('../img/white_rook-512.png');
-	background-repeat: no-repeat;
-	-webkit-background-size: contain;
-	     -o-background-size: contain;
-	        background-size: contain;
+    background-image: url('../img/white_rook-512.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
 }
 
 
