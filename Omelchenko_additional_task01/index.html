@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Additional task #1</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="page-wrapper">
+		<div class="main-bg"></div>
+		<div class="page-container">
+			<h1>Здорово.</h1>
+
+			<p>Получите бесплатный аудит Ваших страниц в социальных сетях и команда специалистов определит уровень их ведения.</p>
+
+			<p class="arrow-down">Внесите данные в форму прямо сейчас и наш менеджер свяжется с Вами для обсуждения деталей.</p>
+
+			<form action="echo" method="post" role="form">
+				<label for="">Имя</label>
+				<input type="text" placeholder="Введите ваше имя" required tab="1">
+
+				<label for="">E-mail</label>
+				<input type="email" placeholder="Введите ваш E-mail" pattern="[\x1F-\xBF]*" required tab="2">
+				
+					<label for="">Номер телефона</label>
+					<div class="phone-wrapper">
+						<!-- <input type="tel" value="+38" pattern="[0-9]{,3}"> -->
+						<span>+38</span>
+						<input type="tel" pattern="[0-9]{3}" title="Format: 3 digits" placeholder="(   )" id="phoneOperator" tabindex="3">
+						<input type="tel" pattern="[0-9]{7}" id="phone" maxlength="7" tabindex="4">
+					</div>
+				
+			</form>
+			<button class="btn" tabindex="4">Отправить</button>
+
+			<p class="send-info">Ваши данные никогда не будут переданы 3-м лицам</p>
+		</div>
+	</div>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="js/maskinput.js"></script>
+	<script>
+		window.onload = function() {
+		   MaskedInput({
+		      elm: document.getElementById('phone'),
+		      format: '_______',
+		   });
+
+		    MaskedInput({
+		      elm: document.getElementById('phoneOperator'),
+		      format: '(___)'
+		   });
+
+		   $('#phoneOperator').mask('(000)');
+		};
+	</script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Futura PT";
+    src: url('../fonts/FuturaPTMedium.otf');
+}
+
+@font-face {
+    font-family: "Futura PT light";
+    src: url('../fonts/FuturaPTLight.otf');
+}
+
+.page-wrapper {
+    max-width: 573px;
+    margin: 0 auto 50px;
+}
+
+.main-bg {
+    height: 280px;
+    background-image: url('../img/main_img.jpg');
+    background-repeat: no-repeat;
+}
+
+.page-container {
+    padding: 10px 44px;
+}
+
+h1 {
+    padding: 7px 0;
+    color: #5f5d5d;
+    font-family: "Futura PT";
+    font-size: 33px;
+    font-weight: 300;
+    text-align: center;
+}
+
+p {
+    padding: 4px 0 0 5px;
+    color: #5f5d5d;
+    font-family: "Futura PT light";
+    font-size: 31px;
+    font-weight: 300;
+    line-height: 37px;
+}
+
+.arrow-down::after {
+    position: absolute;
+    width: 79px;
+    height: 56px;
+    margin: 19px 0 0 17px;
+    background: url('../img/arrow_down.png');
+    content: "";
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    margin: 28px auto;
+}
+
+label,
+input,
+.phone-wrapper  {
+    display: block;
+    color: #898989;
+    font-family: "Futura PT light";
+    font-size: 27px;
+    font-weight: 300;
+}
+
+input {
+    display: block;
+    width: 100%;
+    float: left;
+    border: 1px solid #E8E8E8;
+    outline: none;
+    background: #F0F0F0;
+    font-size: 27px;
+}
+
+input[type="text"],
+input[type="email"] {
+    margin: 5px 0 18px;
+    padding: 10px 7px 13px; 
+}
+
+.phone-wrapper {
+    display: flex;
+    align-items: center;
+    background: #F0F0F0;
+    border: 1px solid #E8E8E8;
+    margin: 5px 0 18px;
+}
+
+.phone-wrapper span {
+    float: left;
+    padding: 0px 21px;
+    max-width: 101px;
+    width: 100%;
+}
+
+.phone-wrapper input {
+    border: 1px solid transparent;
+}
+
+#phoneOperator {
+    width: 100%;
+    max-width: 105px;
+    padding: 12px 14px;
+    border-right: 1px solid #dfdfdf;
+    border-left: 1px solid #dfdfdf;
+}
+
+#phone {
+    padding-left: 20px;
+}
+
+.btn {
+    width: 100%;
+    margin: 5px 0;
+    padding: 6px 0 10px;
+    transition: .3s ease-out;
+    border: 2px solid #18b718;
+    background: transparent;
+    color: #18b718;
+    font-family: "Futura PT light";
+    font-size: 31px;
+    font-weight: 300;
+    letter-spacing: .6px;
+    cursor: pointer; 
+}
+
+.btn:hover,
+.btn:active {
+    -webkit-box-shadow: 2px 3px 10px 0px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 2px 3px 10px 0px rgba(0, 0, 0, .5);
+    box-shadow: 2px 3px 10px 0px rgba(0, 0, 0, .5);
+    border: 2px solid #1585b5;
+    color: #1585b5;
+}
+
+.send-info {
+    color: #898989;
+    font-family: "Futura PT light";
+    font-size: 21px;
+    font-weight: 300;
+    text-align: center;
+}
