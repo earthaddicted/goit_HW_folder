@@ -57,14 +57,23 @@ p {
 }
 
 form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 485px;
+    margin: 28px auto;
+}
+
+.registration_input,
+.phone-wrapper,
+label {
     width: 100%;
     max-width: 400px;
-    margin: 28px auto;
 }
 
 label,
 input,
-.phone-wrapper  {
+.phone-wrapper {
     display: block;
     color: #898989;
     font-family: "Futura PT light";
@@ -96,11 +105,28 @@ input[type="email"] {
     margin: 5px 0 18px;
 }
 
-.phone-wrapper span {
+.country-code {
     float: left;
-    padding: 0px 21px;
+    padding: 0 21px;
     max-width: 101px;
     width: 100%;
+}
+.operator-code {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.operator-code::before {
+    position: absolute;
+    content: "(";
+    left: 12px;
+}
+
+.operator-code::after {
+    position: absolute;
+    content: ")";
+    right: 12px;
 }
 
 .phone-wrapper input {
@@ -109,8 +135,10 @@ input[type="email"] {
 
 #phoneOperator {
     width: 100%;
-    max-width: 105px;
-    padding: 12px 14px;
+    /* max-width: 105px; */
+    max-width: 230px;
+    padding: 12px 0;
+    text-align: center;
     border-right: 1px solid #dfdfdf;
     border-left: 1px solid #dfdfdf;
 }
@@ -121,7 +149,7 @@ input[type="email"] {
 
 .btn {
     width: 100%;
-    margin: 5px 0;
+    margin: 15px 0;
     padding: 6px 0 10px;
     transition: .3s ease-out;
     border: 2px solid #18b718;
