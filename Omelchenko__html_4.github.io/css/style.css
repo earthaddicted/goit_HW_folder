@@ -118,10 +118,7 @@
 .product-item {
     max-width: 380px;
     margin: 20px;
-    /* height: 506px; */
-    /* padding: 10px 42px; */
     padding: 10px 3.3%;
-    float: left;
     border: 2px solid #5a5a5a;
     overflow: hidden;
 }
@@ -154,13 +151,11 @@
     margin-bottom: 15px;
     font-family: Tahoma;
     font-size: 31px;
-    font-weight: 500;
     line-height: 26px;
     text-align: center;
 }
 
 .product-buy {
-    display: inline-block;
     margin: 6px 21px 0;
     padding: 7px 60px 12px 73px;
     transition: .2s ease-out;
