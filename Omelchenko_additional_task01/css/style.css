@@ -112,13 +112,6 @@ input[type="email"] {
     width: 100%;
 }
 .operator-code {
-/*     display: -moz-box;
-display: -webkit-box;
-display: -webkit-flex;
-display: -ms-flexbox;
-display: flex;
--webkit-align-items: center;
-align-items: center; */
     position: relative;
 }
 
@@ -191,5 +184,9 @@ align-items: center; */
 @media (max-width: 568px) {
     .page-container {
         padding: 10px;
+    }
+
+    .arrow-down::after {
+        margin: 35px 0 0 17px;
     }
 }
