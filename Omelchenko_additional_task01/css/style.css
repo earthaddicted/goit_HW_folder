@@ -135,7 +135,6 @@ input[type="email"] {
 
 #phoneOperator {
     width: 100%;
-    /* max-width: 105px; */
     max-width: 230px;
     padding: 12px 0;
     text-align: center;
@@ -164,9 +163,9 @@ input[type="email"] {
 
 .btn:hover,
 .btn:active {
-    -webkit-box-shadow: 2px 3px 10px 0px rgba(0, 0, 0, .5);
-    -moz-box-shadow: 2px 3px 10px 0px rgba(0, 0, 0, .5);
-    box-shadow: 2px 3px 10px 0px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, .5);
+    -moz-box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, .5);
+    box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, .5);
     border: 2px solid #1585b5;
     color: #1585b5;
 }
@@ -177,4 +176,10 @@ input[type="email"] {
     font-size: 21px;
     font-weight: 300;
     text-align: center;
+}
+
+@media (max-width: 568px) {
+    .page-container {
+        padding: 10px;
+    }
 }
