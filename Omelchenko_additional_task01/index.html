@@ -26,14 +26,15 @@
 
 				<label for="">Номер телефона</label>
 				<div class="phone-wrapper" class="registration_input">
-					<span class="country-code">+38</span>
+					<!-- <span class="country-code">+38</span> -->
+					<input type="tel" value="+38" class="country-code" pattern="+38[0-9]{3}" name="country code" tabindex="3" maxlength="3" >
 					<span class="operator-code">
-						<input type="tel" name="code" pattern="[0-9]{3}" id="phoneOperator" tabindex="3" maxlength="3" required/>
+						<input type="tel" name="code" pattern="[0-9]{3}" id="phoneOperator" tabindex="4" maxlength="3" required/>
 					</span>
-					<input type="tel" name="code" pattern="[0-9]{7}" id="phone" tabindex="4" maxlength="7" required/>
+					<input type="tel" name="code" pattern="[0-9]{7}" id="phone" tabindex="5" maxlength="7" required/>
 				</div>
 
-		        <button class="btn" tabindex="5">Отправить</button>
+		        <button class="btn" tabindex="6">Отправить</button>
 		       </form>
 
 			<p class="send-info">Ваши данные никогда не будут переданы 3-м лицам</p>
