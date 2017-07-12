@@ -130,14 +130,14 @@ input[type="email"] {
     position: absolute;
     content: "(";
     left: 12px;
-    padding: 12px 0;
+    top: 17px;
 }
 
 .operator-code::after {
     position: absolute;
     content: ")";
     right: 12px;
-    padding: 12px 0;
+    top: 17px;
 }
 
 .phone-wrapper input {
@@ -147,7 +147,7 @@ input[type="email"] {
 #phoneOperator {
     width: 100%;
     max-width: 230px;
-    padding: 12px 0;
+    padding: 17px 0;
     text-align: center;
     border-right: 1px solid #dfdfdf;
     border-left: 1px solid #dfdfdf;
