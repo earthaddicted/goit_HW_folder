@@ -187,6 +187,10 @@ input[type="email"] {
     }
 
     .arrow-down::after {
-        margin: 35px 0 0 17px;
+        margin: 35px 0 0 0;
+    }
+
+    form {
+        margin-top: 45px;
     }
 }
