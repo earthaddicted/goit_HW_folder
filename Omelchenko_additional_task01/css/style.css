@@ -194,4 +194,8 @@ input[type="email"] {
     form {
         margin-top: 45px;
     }
+
+    #phone {
+        padding-left: 5px;
+    }
 }
