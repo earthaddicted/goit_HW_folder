@@ -57,10 +57,6 @@ p {
 }
 
 form {
-    display: -moz-box;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,28 +112,31 @@ input[type="email"] {
     width: 100%;
 }
 .operator-code {
-    display: -moz-box;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-    align-items: center;
+/*     display: -moz-box;
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-align-items: center;
+align-items: center; */
     position: relative;
 }
 
 .operator-code::before {
+    display: flex;
+    -webkit-align-self: center;
+            align-self: center;
     position: absolute;
     content: "(";
     left: 12px;
-    top: 17px;
+    top: 18px;
 }
 
 .operator-code::after {
     position: absolute;
     content: ")";
     right: 12px;
-    top: 17px;
+    top: 18px;
 }
 
 .phone-wrapper input {
@@ -147,7 +146,7 @@ input[type="email"] {
 #phoneOperator {
     width: 100%;
     max-width: 230px;
-    padding: 17px 0;
+    padding: 12px 0;
     text-align: center;
     border-right: 1px solid #dfdfdf;
     border-left: 1px solid #dfdfdf;
