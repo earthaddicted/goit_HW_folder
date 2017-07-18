@@ -10,37 +10,58 @@
 	<form action="/echo" method="post" class="introduction-form">
 		<fieldset>
 			<legend>Personal details</legend>
+			<br>
 			<div>	
 				<label for="name">First name</label>
 	            <input type="text" id="name"> 
             </div>
+            <br>
             <div>	
 				<label for="surname">Last name</label>
 	            <input type="text" id="surname"> 
             </div>
+            <br>
             <div>	
 				<label for="mail">Email</label>
 	            <input type="text" id="mail">
             </div>
+            <br>
 		</fieldset>	
 	</form>
-
-	<form action="/echo" method="post">
+	<form action="/echo" method="post" class="contact-form">
 		<fieldset>
 			<legend>Contacting you</legend>
-
-			<div>	
-				<label for="name">First name</label>
-	            <input type="checkbox" id="name"> 
+			<p>We may contact you from time to time...</p>
+			<br>
+			<div>How would you like to be contacted
+				<div>
+					<input type="checkbox" id="name"> 
+					<label for="name">By email</label>
+		            
+	            </div>
+			</div>
+            <div>
+            	<input type="checkbox" id="surname"> 
+				<label for="name">By post</label>
+	            
             </div>
             <div>	
-				<label for="name">Last name</label>
-	            <input type="checkbox" id="surname"> 
+				<input type="checkbox" id="surname"> 
+				<label for="name">By carrier pigeon (ha-ha)</label>
             </div>
-            <div>	
-				<label for="name">First name</label>
-	            <input type="checkbox" id="email"> 
-            </div>
+            <br>
+			<div>How often would you like to be contacted
+				<div class="radio-block">
+						<div class="radio-block__item">
+						<input type="radio" id="name"> 
+						<label for="name">Weekly</label>
+			        </div>  
+			        <div class="radio-block__item">
+			            <input type="radio" id="name"> 
+						<label for="name">Daily</label>
+		            </div>
+				</div>
+			</div>
 		</fieldset>	
 	</form>
 </body>

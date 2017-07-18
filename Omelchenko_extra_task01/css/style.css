@@ -1,4 +1,18 @@
+form {
+	max-width: 500px;
+	margin: 50px;
+	padding: 15px;
+}
+
 .introduction-form label {
     display: block;
 
+}
+
+.radio-block {
+	display: flex;
+}
+
+.radio-block__item {
+	width: 50%;
 }
