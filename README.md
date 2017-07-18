@@ -8,17 +8,19 @@ HW2 page view https://earthaddicted.github.io/goit_HW_folder/Omelchenko__html_2.
 
 HW4 page view https://earthaddicted.github.io/goit_HW_folder/Omelchenko__html_4.github.io/
 
-HW5 TASK1 page view https://earthaddicted.github.io/goit_HW_folder/Omelchenko__html_5.github.io/
-
-HW5 TASK2 page view https://earthaddicted.github.io/goit_HW_folder/Omelchenko__html_5.github.io/indexTask2.html
+HW5page view https://earthaddicted.github.io/goit_HW_folder/Omelchenko__html_5.github.io/
 
 HW6 TASK1 page view https://earthaddicted.github.io/goit_HW_folder/Omelchenko__html_6.github.io/
 
+Additional HW: 
 
+ADDITIONAL TASK #1 page view https://earthaddicted.github.io/goit_HW_folder/Omelchenko_additional_task01/
 
+Extra HW:
+
+EXTRA TASK#1 page view https://earthaddicted.github.io/goit_HW_folder/Omelchenko_extra_task01/
 
 OLD HW: 
-
 
 HW 1 https://earthaddicted.github.io/goit_HW_folder/Omelchenko_html_1.github.io/
 
