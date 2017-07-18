@@ -4,117 +4,113 @@
     box-sizing: border-box;
 }
 
-.wrapper {
-	max-width: 900px;
-	margin: 0 auto 50px;
-	width: 100%;
+body {
+     background: rgba(0, 0, 0, .4);
 }
 
-section {
-	padding: 20px 0;
+main {
+    width: 70vw;
+    margin: 50px auto;
+    padding: 50px;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
 }
 
 a {
-	text-decoration: none;
-	color: #000;
+    display: block;
+    margin: 10px 0;
+    transition: .5s ease-out;
+    color: #000;
+    font-family: 'Lemonada', cursive;
+    font-size: 22px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-h1 {
-	background-color: #f1f1f1;
-	padding: 20px;
-	font-size: 30px;
-	font-family: 'Oxygen', sans-serif;
-	font-weight: 600;
-	letter-spacing: 1.3px;
+a:hover {
+    color: rgb(3, 198, 198);
 }
 
-.sidebar {
-	
-	float: left;
-	min-width: 140px;
-	width: 25%;
+a:active {
+    color: rgb(198, 1, 100);
 }
 
-.sidebar a {
-	display: block;
-	padding: 10px 5px;
-	border-bottom: 2px solid #f1f1f1;
-	transition: color .5s ease-out, border-bottom .5s ease-out;
+/* square section */
+
+.wrapper-block {
+    width: 304px;
+    height: 304px;
+    border: 2px solid #000;
 }
 
-.sidebar a:hover {
-	color: rgb(160, 154, 154);
-	border-bottom: 2px solid rgba(0, 0, 0, .5);
+.square {
+    display: block;
+    width: 100px;
+    height: 100px;
+    clear: both;
 }
 
-.main-block {
-	float: left;
-	min-width: 200px;
-	width: 50%;
-	padding: 0 10px;
+.color-blue {
+    float: left;
+    background: blue;
 }
 
-.main-block h2 {
-	font-size: 25px;
-	font-family: 'Oxygen', sans-serif;
-	font-weight: 600;
-	letter-spacing: 1.3px;
+.color-red {
+    margin: auto;
+    background: red;
 }
 
-.main-block p {
-	font-family: 'Oxygen', sans-serif;
-	font-size: 16px;
-	margin: 10px 0;
-	line-height: 28px;
+.color-yellow {
+    float: right;
+    background: yellow;
 }
 
-.bg_picture {
-    height: 300px;
-    margin: 0 auto;
-    background: url('../img/casper_tybjerg_wwwvisitnorway_com_3701pxpx.jpg');
-	background-repeat: no-repeat;
-    background-size: cover;
-
+/* links section */
+.links-hw {
+    padding: 50px 0;
 }
 
-.infoblock {
-	background: #cdf0f6;
-	float: left;
-	min-width: 150px;
-	width: 25%;
+/* page markup section */
+
+.page-markup .global-wrapper {
+    width: 100%;
+    max-width: 485px;
+    margin: 50px 0;
+    padding: 10px;
+    border: 1px solid #000;
 }
 
-.infoblock h3 {
-	font-family: 'Oxygen', sans-serif;
-	font-size: 18px;
-	font-weight: bold;
+.page-markup header {
+    height: 60px;
+    border: 1px solid #000;
 }
 
-.infoblock p {
-	padding: 10px 0;
-	font-family: 'Oxygen', sans-serif;
-	font-size: 16px;
+.wrapper-content {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 5px;
+    float: left;
+    border: 1px solid #000;
 }
 
-.infoblock-item {
-	padding: 5px;
-	margin-bottom: 5px;
+.page-markup .main {
+    width: 100%;
+    max-width: 255px;
+    height: 290px;
+    float: left;
+    border: 1px solid #000;
 }
 
-@media screen and (max-width: 768px) {
-	.sidebar,
-	.main-block,
-	.infoblock {
-		float: none;
-		width: 100%;
-		margin-bottom: 20px;
-	}
+.page-markup .sidebar {
+    width: 100%;
+    max-width: 165px;
+    height: 290px;
+    float: right;
+    border: 1px solid #000;
+}
 
-	.main-block {
-		padding: 0;
-	}
-
-	section {
-		padding: 20px 10px;
-	}
+.page-markup footer {
+    height: 100px;
+    clear: left;
+    border: 1px solid #000;
 }
