@@ -199,9 +199,9 @@ a:active {
 }
 
 
-@media screen and (max-width: 668px) {
+@media screen and (max-width: 568px) {
     main {
         max-width: 100%;
-        padding: 0;
+        padding: 20;
     }
 }
