@@ -6,22 +6,58 @@
 
 table {
     margin: 30px auto;
-    border: 1px solid #000;
 }
 
 td {
-    border: 1px solid #000;
-    text-align: center;
     padding: 3px 5px;
+    text-align: center;
     vertical-align: middle;
 }
- 
-tr:nth-of-type(n+3) td:nth-of-type(1) {
+
+.table-first table {
+    margin: 30px auto;
+    border: 1px solid #000;
+}
+
+.table-first td {
+    padding: 3px 5px;
+    border: 1px solid #000;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table-first tr:nth-of-type(n+3) td:nth-of-type(1) {
+    font-weight: 700;
     text-align: left;
+}
+
+.table-first tr:nth-of-type(n+3) td:nth-of-type(1),
+.table-first tr:nth-of-type(1) {
     font-weight: 700;
 }
 
-tr:nth-of-type(n+3) td:nth-of-type(1),
-tr:nth-of-type(1) {
+.table-second {
+    width: 100%;
+    max-width: 700px;
+    background: rgb(241, 237, 245);
+    padding: 5px;
+}
+
+.table-second tr {
+    margin: 10px;
+}
+
+.table-second td,
+.table-second th {
+    padding: 10px 5px;
+}
+
+.table-second tr:first-of-type {
+    border-bottom: 1px solid rgb(175, 170, 170);
     font-weight: 700;
+}
+
+.table-second__lined td,
+.table-second__lined th {
+    border-bottom: 1px solid rgb(175, 170, 170);
 }
