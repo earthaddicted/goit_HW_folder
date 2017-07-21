@@ -13,12 +13,9 @@ a {
 	background-size: 100% 100%;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 12px;
-	font-style: normal; 
 	line-height: 150%;
-	font-weight: normal;
-	font-variant: normal; 
 	background-attachment: fixed;
-	background-color: #FFF;
+	background-color: #fff;
 	background-image: url(../img/strip.png);
 	background-repeat: no-repeat;
 	background-position: 0px 0px;
@@ -157,6 +154,10 @@ h3 {
 .main-content a {
 	display: block;
 	margin: 0 auto;
+}
+
+.main-content p {
+	margin: 20px 0;
 }
 
 .bordered {
