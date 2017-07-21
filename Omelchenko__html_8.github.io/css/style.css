@@ -1,0 +1,120 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wrapper {
+	max-width: 900px;
+	margin: 0 auto 50px;
+	width: 100%;
+}
+
+section {
+	padding: 20px 0;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+h1 {
+	background-color: #f1f1f1;
+	padding: 20px;
+	font-size: 30px;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 600;
+	letter-spacing: 1.3px;
+}
+
+.sidebar {
+	
+	float: left;
+	min-width: 140px;
+	width: 25%;
+}
+
+.sidebar a {
+	display: block;
+	padding: 10px 5px;
+	border-bottom: 2px solid #f1f1f1;
+	transition: color .5s ease-out, border-bottom .5s ease-out;
+}
+
+.sidebar a:hover {
+	color: rgb(160, 154, 154);
+	border-bottom: 2px solid rgba(0, 0, 0, .5);
+}
+
+.main-block {
+	float: left;
+	min-width: 200px;
+	width: 50%;
+	padding: 0 10px;
+}
+
+.main-block h2 {
+	font-size: 25px;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 600;
+	letter-spacing: 1.3px;
+}
+
+.main-block p {
+	font-family: 'Oxygen', sans-serif;
+	font-size: 16px;
+	margin: 10px 0;
+	line-height: 28px;
+}
+
+.bg_picture {
+    height: 300px;
+    margin: 0 auto;
+    background: url('../img/casper_tybjerg_wwwvisitnorway_com_3701pxpx.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.infoblock {
+	background: #cdf0f6;
+	float: left;
+	min-width: 150px;
+	width: 25%;
+}
+
+.infoblock h3 {
+	font-family: 'Oxygen', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.infoblock p {
+	padding: 10px 0;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 16px;
+}
+
+.infoblock-item {
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+	.sidebar,
+	.main-block,
+	.infoblock {
+		float: none;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.main-block {
+		padding: 0;
+	}
+
+	section {
+		padding: 20px 10px;
+	}
+}
