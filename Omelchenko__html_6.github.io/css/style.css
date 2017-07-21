@@ -6,6 +6,97 @@
     box-sizing: border-box;
 }
 
+/* ancor to the second part of 6-th HW HTML */
+.next-task a {
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    color: #fff;
+    background: #008000;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    -webkit-animation: 10s changebackground none infinite;
+    -moz-animation: 10s changebackground none infinite;
+    -o-animation: 10s changebackground none infinite;
+    animation: 10s changebackground none infinite;
+}
+
+.next-task a::after {
+    position: absolute;
+    top: 40px;
+    right: -9px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #008000;
+    content: '';
+    animation: 10s changebackgroundtriangle none infinite;
+}
+
+@keyframes changebackground {
+    0%, 100% {
+        background: rgb(32, 141, 160);
+    }
+
+    25% {
+        background: rgb(52, 138, 153);
+    }
+
+    40% {
+        background: rgb(8, 178, 121);
+    }
+
+    60% {
+        background: rgb(197, 226, 217);
+    }
+
+    80% {
+        background: rgb(211, 179, 208);
+    }
+
+    95% {
+        background: rgb(209, 156, 204);
+    }
+}
+
+@keyframes changebackgroundtriangle {
+    0%, 100% {
+        border-left: 10px solid rgb(32, 141, 160);
+    }
+
+    25% {
+        border-left: 10px solid rgb(52, 138, 153);
+    }
+
+    40% {
+        border-left: 10px solid rgb(8, 178, 121);
+    }
+
+    60% {
+        border-left: 10px solid rgb(197, 226, 217);
+    }
+
+
+    80% {
+        border-left: 10px solid rgb(211, 179, 208);
+    }
+
+
+    95% {
+        border-left: 10px solid rgb(209, 156, 204);
+    }
+}
+
+/* ancor to the second part of 6-th HW HTML end */
 body {
     background: rgba(130, 141, 183, .2);
 }
