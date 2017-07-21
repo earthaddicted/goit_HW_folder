@@ -69,7 +69,7 @@ a {
 	color: blue;
 }
 
-.contacts a[href^="tel:"] {
+.acitve-tel {
 	font-weight: 700;
 }
 
