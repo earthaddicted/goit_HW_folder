@@ -123,10 +123,10 @@
 			</table>
 		</section>
 		<section class="popup">
-			<div onclick="show('none')" id="wrap"></div>
-			<div id="popup-tem">
+			<div onclick="show('none')" class="wrap"></div>
+			<div class="popup-item">
 				<div class="close" onclick="show('none')">
-					<svg>
+					<svg  fill="white">
 						<g>
 						<path d="M23.302,16.628l-5.395-5.415l5.407-5.345c0.222-0.222,0.222-0.584,0-0.806l-1.538-1.546
 						c-0.106-0.107-0.251-0.165-0.403-0.165s-0.295,0.062-0.402,0.165l-5.382,5.328l-5.39-5.325c-0.107-0.106-0.251-0.165-0.403-0.165
@@ -203,12 +203,6 @@
 
 		</section>
 	</main>
-
+	<script src="js/script.js"></script>
 </body>
-<script type="text/javascript">
-	function show(state){
-		document.getElementById('popup-tem').style.display = state;			
-		document.getElementById('wrap').style.display = state; 			
-	}
-</script>
 </html>

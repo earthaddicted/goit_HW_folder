@@ -64,7 +64,7 @@ td {
 }
 
 /* task 4 popup table */
-#wrap {
+.wrap {
     display: none;
     opacity: .8;
     position: fixed;
@@ -95,11 +95,7 @@ td {
     padding-left: 3%;
 }
 
-.close svg path {
-    fill: white;
-}
-
-#popup-tem {
+.popup-item {
     display: none;
     position: fixed;
     top: 10%;
