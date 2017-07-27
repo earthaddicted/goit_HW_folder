@@ -51,3 +51,5 @@ HW5 table https://earthaddicted.github.io/goit_HW_folder/Omelchenko_html_5_table
 HW5 table-grid https://earthaddicted.github.io/goit_HW_folder/Omelchenko_html_5_table_grid.github.io/
 
 HW6 page view https://earthaddicted.github.io/goit_HW_folder/Omelchenko_html_6.github.io/
+
+HW7-8 page view https://earthaddicted.github.io/goit_HW_folder/Omelchenko_html_7-8.github.io/
