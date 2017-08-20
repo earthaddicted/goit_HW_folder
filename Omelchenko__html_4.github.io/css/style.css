@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 .next-task a {
     display: flex;
     -webkit-align-items: center;
@@ -18,7 +22,6 @@
     background: #008000;
     border-radius: 50%;
     text-align: center;
-    text-decoration: none;
     font-family: 'Lato', sans-serif;
     -webkit-animation: 10s changebackground none infinite;
     -moz-animation: 10s changebackground none infinite;
