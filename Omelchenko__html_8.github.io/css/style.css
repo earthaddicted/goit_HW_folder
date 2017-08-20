@@ -29,7 +29,6 @@ h1 {
 }
 
 .sidebar {
-	
 	float: left;
 	min-width: 140px;
 	width: 25%;
@@ -68,13 +67,10 @@ h1 {
 	line-height: 28px;
 }
 
-.bg_picture {
+.bg_picture img {
     height: 300px;
     margin: 0 auto;
-    background: url('../img/casper_tybjerg_wwwvisitnorway_com_3701pxpx.jpg');
-	background-repeat: no-repeat;
-    background-size: cover;
-
+    width: 100%;
 }
 
 .infoblock {
