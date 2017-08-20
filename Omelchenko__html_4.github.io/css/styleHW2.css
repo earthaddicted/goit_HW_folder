@@ -27,7 +27,13 @@
     background-color: #7a150f;
 }
 
- .chess-item:nth-child(2) {
+.chess-item img {
+    display: block;
+    width: auto;
+    height: 100%;
+}
+
+/* .chess-item:nth-child(2) {
     background-image: url('../img/black_bishop-512.png');
     background-repeat: no-repeat;
     -webkit-background-size: contain;
@@ -49,6 +55,6 @@
     -webkit-background-size: contain;
     -o-background-size: contain;
     background-size: contain;
-}
+}*/
 
 
