@@ -414,7 +414,8 @@ header {
 /* --------------------- main  ---------------------*/
 /* section about */
 .about {
-        display: block;
+       /* display: block;*/
+        display: flex;
         background: linear-gradient(to top, #322539 0%, #745083 100%);
         color: #FFF;
         text-align: center;
@@ -527,11 +528,11 @@ header {
         background: #f9f9f9;
         text-align: center;
         box-shadow: 0 -1px 0 #fefefe;
+        padding-bottom: 85px;
 }
  
 .blog > .wrapper {
         padding-top: 99px;
-        padding-bottom: 85px;
 }
  
 .blog__active {
