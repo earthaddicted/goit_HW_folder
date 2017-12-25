@@ -21,6 +21,9 @@ HW8 TASK1 page view https://earthaddicted.github.io/goit_HW_folder/Omelchenko__h
 HW8 TASK2 page view https://earthaddicted.github.io/goit_HW_folder/Omelchenko__html_8.github.io/indexTask2.html
 
 
+JAVASCRIPT
+HW1-2 TASK https://earthaddicted.github.io/goit_HW_folder/Omelchenko__js1.github.io/index.html
+
 
 Additional HW: 
 
