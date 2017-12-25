@@ -1,0 +1,80 @@
+
+main {
+
+}
+
+section {
+	max-width: 600px;
+	margin: auto;
+	padding: 50px 20px;
+	background-color: rgba(0, 0, 0, .2);
+	border-radius: 10px;
+}
+
+input {
+	padding: 2px 5px;
+	margin: 20px;
+	color: rgb(128,0,128);
+	border: 1px solid transparent;
+	box-shadow: 10px 10px 19px -5px rgba(0,0,0,0.67);
+}
+
+input::placeholder {
+  color: rgb(47,79,79);
+}
+
+input:focus {
+	outline: rgba(143, 55, 154, .7);
+}
+
+#form-to-pow {
+	display: none;
+}
+
+#form-to-pow.open {
+	display: block;
+}
+
+form label {
+	display: block;
+}
+
+form label + div {
+	width: 50%;
+}
+
+button {
+	border: solid transparent;
+	background: rgba(143, 55, 154, .7);
+	margin: 15px 0;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	-webkit-box-shadow: 10px 10px 19px -5px rgba(0,0,0,0.67);
+	-moz-box-shadow: 10px 10px 19px -5px rgba(0,0,0,0.67);
+	box-shadow: 10px 10px 19px -5px rgba(0,0,0,0.67);
+	transition: .2s ease-out;
+}
+
+button:hover {
+	box-shadow: 0;
+}
+
+div {
+	position: relative;
+}
+
+span {
+	position: absolute;
+	font-size: 12px;
+	color: rgba(0, 0, 0, .6);
+}
+
+#result,
+#symbols {
+	position: relative;
+	display: block;
+	margin: 20px;
+	padding: 0 5px;
+}
+
