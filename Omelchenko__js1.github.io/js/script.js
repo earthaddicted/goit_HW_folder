@@ -17,24 +17,30 @@
 		var age;
 		var inp;
 
-		if (input.length == 2) {
+		if (input.length === 2) {
 			if (inputNum > shortYear) {
 				inp = '19' + input;
+        event.preventDefault();
 			} else {
 				inp = '20' + input;
+        
+        event.preventDefault();
 			}
 				age = year - inp;
 			alert('Your age is'+' '+age);
-		}  else if (input.length == 4){
+		}  else if (input.length === 4){
+      event.preventDefault();
 			age = year - input;
 			alert('Your age is'+' '+age);
 		} else if(input.length  !== NaN) {
+      event.preventDefault();
 			age = year - input;
 			alert('Oops! Seems you entered something else! '+' '+ age );
 		}
 	}
-
-	ageFinder.addEventListener('click', calculateAge);
+  
+	ageFinder.addEventListener('click', calculateAge, false);
+  
 })();
 
 /*task 2
@@ -54,15 +60,17 @@
 		
 		if (largestNumber >= smallestNumber ) {
 			console.log(nums);
+      event.preventDefault();
 			
 			prompt('The largest number is :', largestNumber);
 
 		} else if (largestNumber !== NaN || undefined) {
 			alert('Please, try again and enter only numbers!');
+      event.preventDefault();
 		}
 	}
 
-	btnForSecondTask.addEventListener('click', maxnum);
+btnForSecondTask.addEventListener('click', maxnum);
 })();	
 
 /* task 3
@@ -78,12 +86,16 @@
 		var appartmentNumber = prompt( 'Please, enter the number of your appartment', ' ');
 
 		if (appartmentNumber >= 1 && appartmentNumber <= 20) {
+      event.preventDefault();
 			alert('Your appartment belongs to the first entry');
 		} else if (appartmentNumber >= 21 && appartmentNumber <= 64) {
+      event.preventDefault();
 			alert('Your appartment belongs to the second entry');
 		} else if (appartmentNumber >= 65 && appartmentNumber <= 80) {
+      event.preventDefault();
 			alert('Your appartment belongs to the third entry');
 		} else if (appartmentNumber !== NaN ) {
+      event.preventDefault();
 			alert('Please, try again and enter only numbers or check if your appartment is in a needed number range!');
 		}
 
@@ -133,9 +145,11 @@ ivan ->  333 ssss-> 666 gibs ->0000
 				for ( var i = 0, max = dataBase[key].length; i < max; i++ ) {
 
 					if (dataBase[key][i].login === enterLogin && dataBase[key][i].password == enterPassword) {
+            event.preventDefault();
 						alert(enterLogin + ', welcome!');
 						return;
 					} else {
+            event.preventDefault();
 						alert('Something went wrong, please, check all fields!');
 					}
 				}
@@ -146,64 +160,6 @@ ivan ->  333 ssss-> 666 gibs ->0000
 
 	btnForFourthTask.addEventListener('click', checklogin);
 })();
-
-// Correct only for one property task 4
-/*(function() {
-	'use strict';
-
-	var btnForFourthTask = document.getElementById('task4');
-
-	function checklogin() {
-
-
-		var userDb = {
-
-			registeredUsers: [
-				{
-					login: 'ivan',
-					password: 333
-				},
-				{
-					login: 'ssss',
-					password: 666
-				},
-				{
-					login: 'gibs',
-					password: 1111
-				}
-			]
-		};
-
-		console.log(userDb );
-
-		function searchDB(dataBase, val) {
-			for (var key in  dataBase) {
-
-				for ( var i = 0, max = dataBase[key].length; i < max; i++ ) {
-
-					if (dataBase[key][i].login === val) {
-						// alert("we have such user");
-						return	dataBase[key][i];
-					}
-				}
-			}
-
-			return null;
-		}
-
-		var enterLogin = prompt( 'Please, enter your login:', ' ');
-
-		var searchLogin = searchDB(userDb, enterLogin);
-
-		if (searchLogin) {
-			console.log('Correct!');
-		} else {
-			console.log('Oops!');
-		}
-	}
-
-	btnForFourthTask.addEventListener('click', checklogin);
-})();*/
 
 /*Задание 5. Пользователь вводит 3 числа. 
 Найти и вывести максимальное из данных трех чисел.*/
@@ -221,11 +177,13 @@ ivan ->  333 ssss-> 666 gibs ->0000
 		var  smallestNumber = Math.min.apply(null, nums);
 		
 		if (largestNumber >= smallestNumber ) {
+      event.preventDefault();
 			console.log(nums);
 			
 			prompt('The largest number is :', largestNumber);
 
 		} else if (largestNumber !== NaN || undefined) {
+      event.preventDefault();
 			alert('Please, try again and enter only numbers!');
 		}
 	}
@@ -281,7 +239,7 @@ ivan ->  333 ssss-> 666 gibs ->0000
 		}
 
 		return sum;
-		alert( sumTo(100) );
+		
 	}
 
 	// alert( sumTo(100) );
@@ -289,7 +247,6 @@ ivan ->  333 ssss-> 666 gibs ->0000
 
 	btnForLoopThirdTask.addEventListener('click', sumTo);
 })();
-
 
 /*Задайте два input. В первый вводится число, во второе его степень. С помощью цикла возведите число в степень. 
 Напечатайте результат. */
@@ -367,11 +324,11 @@ ivan ->  333 ssss-> 666 gibs ->0000
  			var result = i * multiplier;
 
  			console.log(i + "*" + multiplier +"=" + " " + result);
- 			document.getElementById('result').innerHTML+=('\n' + i + " * " + multiplier + " = " + " " + result + '\n');
+ 			document.getElementById('result').innerHTML+=('\n' + i + " * " + multiplier + " = " + " " + result +'<br>');
  		}
  	}
 
- 	btnForLoopFifthTask.addEventListener('click', multiplicationTable);
+btnForLoopFifthTask.addEventListener('click', multiplicationTable);
 })();
 
 
@@ -404,9 +361,9 @@ ivan ->  333 ssss-> 666 gibs ->0000
 
  				var symb = String.fromCharCode(i);
 				console.log(String.fromCharCode(i));
-				document.getElementById("symbols").innerHTML = symb;
+				// document.getElementById("symbols").innerHTML = symb;
+        document.getElementById("symbols").innerHTML+= symb;
 			}
-			
  		}
 
 	btnForLoopSeventhTask.addEventListener('click', symbol);
