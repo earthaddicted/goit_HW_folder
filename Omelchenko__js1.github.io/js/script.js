@@ -91,16 +91,15 @@ btnForSecondTask.addEventListener('click', maxnum);
 		var appartmentNumber = prompt( 'Please, enter the number of your appartment', ' ');
 
 		if (appartmentNumber >= 1 && appartmentNumber <= 20) {
-      
 			alert('Your appartment belongs to the first entry');
+      
 		} else if (appartmentNumber >= 21 && appartmentNumber <= 64) {
-      // event.preventDefault();
 			alert('Your appartment belongs to the second entry');
+      
 		} else if (appartmentNumber >= 65 && appartmentNumber <= 80) {
-      // event.preventDefault();
 			alert('Your appartment belongs to the third entry');
+      
 		} else if (appartmentNumber !== NaN ) {
-      // event.preventDefault();
 			alert('Please, try again and enter only numbers or check if your appartment is in a needed number range!');
 		}
 
@@ -119,13 +118,9 @@ ivan ->  333 ssss-> 666 gibs ->0000
 (function() {
 	'use strict';
 
-	var btnForFourthTask = document.getElementById('task4');
-
-	function checklogin() {
-  event.preventDefault();
-
-		var userDb = {
-
+	var btnForFourthTask = document.querySelector('#task4');
+  
+		var userDB = {
 			registeredUsers: [
 				{
 					login: 'ivan',
@@ -141,29 +136,30 @@ ivan ->  333 ssss-> 666 gibs ->0000
 				}
 			]
 		};
-
+  
+   btnForFourthTask.addEventListener("click", checklogin);
+  
+  function checklogin() {
+    event.preventDefault();
 		var enterLogin = prompt( 'Please, enter your login:', ' ');
-		var enterPassword = prompt( 'Please, enter your password:', ' ');
+		var enterPassword = Number(prompt('Please, enter your password:', ' '));
+    var registerChech = searchDB(userDB.registeredUsers, enterLogin, enterPassword);
+    
+    if (registerChech) {
+      alert(enterLogin + ', welcome!');
+    } else {
+      alert('Something went wrong, please, check all fields!');
+    }
+  }
 
-		function searchDB(dataBase) {
-			for (var key in  dataBase) {
-				for ( var i = 0, max = dataBase[key].length; i < max; i++ ) {
-
-					if (dataBase[key][i].login === enterLogin && dataBase[key][i].password == enterPassword) {
-            // event.preventDefault();
-						alert(enterLogin + ', welcome!');
-						return;
-					} else {
-            // event.preventDefault();
-						alert('Something went wrong, please, check all fields!');
-					}
-				}
-			}
-		}
-		searchDB(userDb);
-	}
-
-	btnForFourthTask.addEventListener('click', checklogin);
+  function searchDB(users, login, pass) {
+      for ( var i = 0, max = users.length; i < max; i++ ) {
+          if (users[i].login === login && users[i].password === pass) {
+            return true;
+          }
+      }
+      return false;
+  }
 })();
 
 /*Задание 5. Пользователь вводит 3 числа. 
