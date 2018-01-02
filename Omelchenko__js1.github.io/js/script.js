@@ -239,9 +239,7 @@ ivan ->  333 ssss-> 666 gibs ->0000
 		for (var i = 1; i <= n; i++) {
 			sum += i;
 		}
-
 		return sum;
-		
 	}
 
 	// alert( sumTo(100) );
@@ -364,7 +362,7 @@ btnForLoopFifthTask.addEventListener('click', multiplicationTable);
  				var symb = String.fromCharCode(i);
 				console.log(String.fromCharCode(i));
 				// document.getElementById("symbols").innerHTML = symb;
-        document.getElementById("symbols").innerHTML+= symb;
+        document.getElementById("symbols").innerHTML+= symb + " ";
 			}
  		}
 
