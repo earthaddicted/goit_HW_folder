@@ -9,6 +9,8 @@
 
 	var ageFinder = document.getElementById('total-age');
 	function calculateAge() {
+    event.preventDefault();
+    
 		var date = new Date();
 		var year = date.getFullYear();
 		var shortYear = parseInt(year.toString().substring(2, 4));
@@ -20,26 +22,26 @@
 		if (input.length === 2) {
 			if (inputNum > shortYear) {
 				inp = '19' + input;
-        event.preventDefault();
+        // event.preventDefault();
 			} else {
 				inp = '20' + input;
         
-        event.preventDefault();
+        // event.preventDefault();
 			}
 				age = year - inp;
 			alert('Your age is'+' '+age);
 		}  else if (input.length === 4){
-      event.preventDefault();
+      // event.preventDefault();
 			age = year - input;
 			alert('Your age is'+' '+age);
 		} else if(input.length  !== NaN) {
-      event.preventDefault();
+      // event.preventDefault();
 			age = year - input;
 			alert('Oops! Seems you entered something else! '+' '+ age );
 		}
 	}
   
-	ageFinder.addEventListener('click', calculateAge, false);
+	ageFinder.addEventListener('click', calculateAge);
   
 })();
 
@@ -49,9 +51,11 @@
 Учтите вариант равенства чисел.*/
 (function() {
 	'use strict';
+  
 	var btnForSecondTask = document.getElementById('task2');
 
 	function maxnum() {
+    event.preventDefault();
 		var firstNumber = prompt( 'Please, enter first number:', ' ');
 		var secondNumber = prompt( 'Please, enter second number:', ' ');
 		var nums = [firstNumber, secondNumber];
@@ -60,13 +64,13 @@
 		
 		if (largestNumber >= smallestNumber ) {
 			console.log(nums);
-      event.preventDefault();
+      // event.preventDefault();
 			
 			prompt('The largest number is :', largestNumber);
 
 		} else if (largestNumber !== NaN || undefined) {
 			alert('Please, try again and enter only numbers!');
-      event.preventDefault();
+      // event.preventDefault();
 		}
 	}
 
@@ -83,19 +87,20 @@ btnForSecondTask.addEventListener('click', maxnum);
 	var btnForThirdTask = document.getElementById('task3');
 
 	function appartments() {
+    event.preventDefault();
 		var appartmentNumber = prompt( 'Please, enter the number of your appartment', ' ');
 
 		if (appartmentNumber >= 1 && appartmentNumber <= 20) {
-      event.preventDefault();
+      
 			alert('Your appartment belongs to the first entry');
 		} else if (appartmentNumber >= 21 && appartmentNumber <= 64) {
-      event.preventDefault();
+      // event.preventDefault();
 			alert('Your appartment belongs to the second entry');
 		} else if (appartmentNumber >= 65 && appartmentNumber <= 80) {
-      event.preventDefault();
+      // event.preventDefault();
 			alert('Your appartment belongs to the third entry');
 		} else if (appartmentNumber !== NaN ) {
-      event.preventDefault();
+      // event.preventDefault();
 			alert('Please, try again and enter only numbers or check if your appartment is in a needed number range!');
 		}
 
@@ -117,7 +122,7 @@ ivan ->  333 ssss-> 666 gibs ->0000
 	var btnForFourthTask = document.getElementById('task4');
 
 	function checklogin() {
-
+  event.preventDefault();
 
 		var userDb = {
 
@@ -145,11 +150,11 @@ ivan ->  333 ssss-> 666 gibs ->0000
 				for ( var i = 0, max = dataBase[key].length; i < max; i++ ) {
 
 					if (dataBase[key][i].login === enterLogin && dataBase[key][i].password == enterPassword) {
-            event.preventDefault();
+            // event.preventDefault();
 						alert(enterLogin + ', welcome!');
 						return;
 					} else {
-            event.preventDefault();
+            // event.preventDefault();
 						alert('Something went wrong, please, check all fields!');
 					}
 				}
@@ -168,6 +173,7 @@ ivan ->  333 ssss-> 666 gibs ->0000
 	var btnForFifthTask = document.getElementById('task5');
 
 	function maxNumOfThree() {
+    event.preventDefault();
 		var firstNumber = prompt( 'Please, enter first number:', ' ');
 		var secondNumber = prompt( 'Please, enter second number:', ' ');
 		var thirdNumber = prompt( 'Please, enter third number:', ' ');
@@ -177,13 +183,13 @@ ivan ->  333 ssss-> 666 gibs ->0000
 		var  smallestNumber = Math.min.apply(null, nums);
 		
 		if (largestNumber >= smallestNumber ) {
-      event.preventDefault();
+      // event.preventDefault();
 			console.log(nums);
 			
 			prompt('The largest number is :', largestNumber);
 
 		} else if (largestNumber !== NaN || undefined) {
-      event.preventDefault();
+      // event.preventDefault();
 			alert('Please, try again and enter only numbers!');
 		}
 	}
