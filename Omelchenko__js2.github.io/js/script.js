@@ -1,51 +1,59 @@
-//1.	Напишите функцию для вывода элементов массива в элемент <p id=”new”></p>.
-var magicBtn = document.getElementById('magic-btn');
+'use strict'
+// 1.	Напишите функцию для вывода элементов массива в элемент <p id=”new”></p>.
+let magicBtn = document.getElementById('magic-btn');
 
 function contentToParagraph() {
-  var contentsElements = document.getElementById('new1'); 
-  var arr = ['Alohomora!' ];
+  let contentsElements = document.getElementById('new1'); 
+  let arr = ['Alohomora!' ];
   
-  for (var i = 0, max = arr.length; i < max; i++) {
+  for (let i = 0, max = arr.length; i < max; i++) {
     contentsElements.innerHTML +=  arr[i] + " ";
   }
 }
-// magicBtn.addEventListener('click', contentToParagraph);
+magicBtn.addEventListener('click', contentToParagraph);
 
 // 2.	Добавьте в предыдущую программу два элемента input, в которые можно ввести индекс массива и значение. По нажатию “ОК” - массив выводится.
-var inputBtn = document.getElementById('input-btn');
-var arr = [ ];
-// var inputForIndex = document.getElementById('input-index');
-var inputForValue = document.getElementById('input-value');
 
-function addInputs() {
-  var arrIndex = arr.length;
-  var p = document.getElementById("new");
-  var arrResult = document.getElementById("span-arr");
+let arr = [];
+
+let inputForValue = document.getElementById('input-value');
+function addInputs(arr, num) {
+
+  let arrIndex = arr.length;
+  let p = document.getElementById("new");
+  // let arrResult = document.getElementById("span-arr");
   
   p.innerHTML = "Array length: " + arrIndex + '<br>';
   // arrResult.innerHTML = "Array: " + arr[i] + '<br>';
   
-    for(var i = 0; i < arrIndex; i++) {
+    for(let i = 0; i < arrIndex; i++) {
       p.innerHTML +=  i + arr[i] + ' ';
     }
+  // arrResult.innerHTML += arr + '  ';
   console.log(arr);
+  
+  
+ 
   }
+
+addInputs(arr);
+
   // 3.	Добавьте кнопку pop реализующую метод pop() для введенного выше массива. 
-  var popBtn =  document.getElementById('button-pop');
-  var shiftBtn =  document.getElementById('button-shift');
-  var pushBtn =  document.getElementById('button-push');
-  var unshiftBtn =  document.getElementById('button-unshift');
+  let popBtn =  document.getElementById('button-pop');
+  let shiftBtn =  document.getElementById('button-shift');
+  let pushBtn =  document.getElementById('button-push');
+  let unshiftBtn =  document.getElementById('button-unshift');
   
     function popArr() {
       arr.pop();
-      addInputs();
+      addInputs(arr);
     }
     popBtn.addEventListener('click', popArr);
 
 // 4.	Добавьте кнопку shift реализующую метод shift() для введенного выше массива. 
     function shiftArr() {
         arr.shift();
-        addInputs();
+        addInputs(arr);
       }
     shiftBtn.addEventListener('click', shiftArr);
 
@@ -53,24 +61,21 @@ function addInputs() {
 //5.	Добавьте кнопку push реализующую метод push() для введенного выше массива. Данные для записи необходимо считывать из input.
 
   function pushArr() {
-      var pushContent =  document.getElementById('input-value').value;
+      let pushContent =  document.getElementById('input-value').value;
       arr.push(pushContent);
-      addInputs();
-      document.getElementById('input-value').value=" ";
+      addInputs(arr);
+      // document.getElementById('input-value').value=" ";
     }
 
   pushBtn.addEventListener('click', pushArr);
 
 // 6.	Добавьте кнопку push реализующую метод push() для введенного выше массива. Данные для записи необходимо считывать из input.
     function unshiftArr() {
-      var unshiftContent =  document.getElementById('input-value').value;
-      arr.push(unshiftContent);
-      addInputs();
-      document.getElementById('input-value').value=" ";
+      let unshiftContent =  document.getElementById('input-value').value;
+      arr.unshift(unshiftContent);
+      addInputs(arr);
     }
     unshiftBtn.addEventListener('click', unshiftArr);
 
 
 inputBtn.addEventListener('click', addInputs);
-
-
