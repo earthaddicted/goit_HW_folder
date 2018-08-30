@@ -149,6 +149,8 @@ label {
     	align-items: center;
 	font-size: 14px;
 	letter-spacing: 0.2px;
+	text-align: center;
+    	justify-content: center;
 }
 
 .checkbox {
